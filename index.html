@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Dodge Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <div class="top-bar">
+      <div>Score: <span id="score">0</span></div>
+      <div>Best: <span id="bestScore">0</span></div>
+    </div>
+
+    <div id="gameArea" class="game-area">
+      <div class="road"></div>
+      <div class="lane lane1"></div>
+      <div class="lane lane2"></div>
+
+      <div id="playerCar" class="car player">
+        <div class="top"></div>
+        <div class="window"></div>
+        <div class="light left"></div>
+        <div class="light right"></div>
+      </div>
+
+      <div id="startScreen" class="start-screen">
+        <h1>Car Dodge</h1>
+        <p>Use Left / Right arrow keys</p>
+        <button id="startBtn">Start Game</button>
+      </div>
+
+      <div id="gameOverScreen" class="game-over hidden">
+        <h2>Game Over</h2>
+        <p>Score: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
